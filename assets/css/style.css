@@ -1,7 +1,9 @@
 * {
   box-sizing: border-box;
 }
+
 html {
+  /* quy đổi 1rem = 10px */
   font-size: 62.5%;
 }
 
@@ -15,14 +17,15 @@ a {
   text-decoration: none;
 }
 
-.main-content {
+.container {
   width: 1170px;
   margin: 0 auto;
   max-width: calc(100% - 48px);
 }
 
 .btn {
-  display: block;
+  display: inline-block;
+  min-width: 118px;
   border-radius: 24.5px;
   background: #171100;
   color: #fff;
@@ -35,44 +38,53 @@ a {
 
 /* ===== End common ===== */
 
-/* ===== header ===== */
+/*----------------------------------
+# Header
+-----------------------------------*/
 .header {
-  margin-top: 36px;
+  /* background: violet; */
+
 }
 
-.header .header-body {
+.header.fixed {
+  position: sticky;
+  top: 0;
+}
+
+.header__body {
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
+  justify-content: space-between;
+  padding: 36px 0 8px;
 }
 
-.header .nav {
+.header__navbar {
   margin-left: auto;
 }
 
-.header .nav ul {
+.header__list {
   display: flex;
-  /* gap: 42px; */
+  min-width: 359px;
+  gap: 42px;
 }
 
-.nav a {
+.header__link {
   position: relative;
   color: #5f5b53;
   text-align: center;
   font-size: 1.6rem;
-  padding: 8px 21px;
-  /* background: orange; */
+  padding: 8px 0;
 }
 
-.nav a:hover,
-.active {
+.header__link:hover,
+.header__active {
   color: #171100;
   /* font-weight: 600; */
   text-shadow: 1px 0 0 currentColor; /* thay cho fw=600 để k bị giật*/
 }
 
-.nav .active a::after {
-  /* display: block; */
+.header__active .header__link::after {
+  display: inline-block;
   position: absolute;
   content: "";
   width: 12px;
@@ -80,10 +92,15 @@ a {
   border-radius: 1px;
   background: #171100;
   bottom: 6px;
-  left: 21px;
+  left: 0;
 }
 
-.header .btn-sign-up {
-    min-width: 144px;
+.header__cta {
+  margin-left: 70px;
 }
+
+.header__sign-up {
+  min-width: 144px;
+}
+
 /* ===== end header ===== */
