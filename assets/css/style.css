@@ -5,6 +5,7 @@
 html {
   /* quy đổi 1rem = 10px */
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -585,7 +586,8 @@ a {
   justify-content: center;
 }
 
-.features__heading, .feature-two__heading {
+.features__heading,
+.feature-two__heading {
   color: #171100;
   font-family: Sen;
   font-size: 3.8rem;
@@ -602,6 +604,7 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: 28px; /* 175% */
+  --line-clamp: 3;
 }
 
 .features .act {
@@ -647,4 +650,126 @@ a {
   width: 470px;
   height: 440px;
   object-fit: cover;
+}
+
+/*--------------------------------
+# Blog section
+/*--------------------------------*/
+.blog {
+  margin-top: 200px;
+  padding: 96px 0;
+  background: #fffcf4;
+}
+
+.blog__heading {
+  color: #130606;
+  font-family: Sen;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 126.316% */
+  letter-spacing: -0.76px;
+}
+
+.blog__top {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 16px auto;
+  width: 448px;
+  /* background: orange; */
+}
+
+.blog__desc {
+  color: #696262;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+}
+
+.blog__list {
+  display: flex;
+  margin-top: 55px;
+  gap: 30px;
+}
+
+.blog__thumb {
+  width: 370px;
+  height: 250px;
+}
+
+.blog__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px 16px 0px 0px;
+  /* background: url(<path-to-image>) lightgray 50% / cover no-repeat; */
+}
+
+.blog__item {
+  width: 33.3%;
+  border-radius: 16px;
+  background: #fff;
+}
+
+.blog__item .btn:hover {
+  background: #ffb900;
+}
+
+.blog__item:hover {
+  box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+}
+
+.blog__item .heading {
+  margin-top: 25px;
+}
+
+.blog__item .act {
+  margin-top: 12px;
+}
+
+.blog__item .blog.dot {
+  width: 6px;
+  height: 6px;
+  background: #ffb900;
+  border-radius: 50%;
+}
+
+.blog__item .blog-date {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.blog-date .desc {
+  color: #5f5b53;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 26px; /* 185.714% */
+}
+
+.blog__info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.blog__dots {
+  display: flex;
+  gap: 6px;
+  width: 30px;
+  margin: 38px auto 0;
+}
+
+.blog__dot {
+  width: 6px;
+  height: 6px;
+  background: #5f5b53;
+  border-radius: 50%;
+}
+
+.blog__dot.active {
+  background: var(--primary-color);
 }
