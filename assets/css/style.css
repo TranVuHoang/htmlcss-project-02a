@@ -47,6 +47,10 @@ a {
   padding: 0 10px;
 }
 
+.btn:hover {
+  opacity: 1;
+}
+
 .section-heading {
   color: #171100;
   font-size: 1.8rem;
@@ -137,7 +141,7 @@ a {
 # Section Hero
 -----------------------------------*/
 .hero {
-  padding-top: 56px;
+  padding: 56px 0 65px;
 }
 
 .hero__body {
@@ -161,6 +165,7 @@ a {
 .hero__avt {
   width: 100%;
   height: 100%;
+  object-fit: cover;
   border-radius: 20px;
   background: url(<path-to-image>) lightgray -448.75px 0px / 218.672% 100% no-repeat;
 }
@@ -238,7 +243,7 @@ a {
   display: flex;
   /* justify-content: space-between; */
   align-items: center;
-  gap: 28;
+  /* gap: 28px; */
 }
 
 .hero__see-courses {
@@ -251,12 +256,17 @@ a {
   line-height: 1.67; /* 166.667% */
 }
 
+.hero__see-courses {
+  cursor: pointer;
+}
+
 .hero__watch-video {
   margin-left: 28px;
   display: flex;
   gap: 14px;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .hero__play {
@@ -268,7 +278,7 @@ a {
   background: #fff;
   color: #ffb900;
   border: 1px solid #fff;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.07);
+  box-shadow: 0px 8px 16px 0px #00000012;
 }
 
 .hero__recent {
@@ -297,10 +307,10 @@ a {
 .hero__number-big {
   color: #171100;
   font-family: Sen;
-  font-size: 44px;
+  font-size: 4.4rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 54px; /* 122.727% */
+  line-height: 1.23; /* 122.727% */
 }
 
 .hero__number-small {
@@ -308,4 +318,151 @@ a {
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 30px;
+  margin-bottom: 5px;
 }
+
+/*-----------------------------------
+# Section Popular
+----------------------------------- */
+.popular {
+  margin-top: 100px;
+  padding: 100px 0;
+}
+
+.popular__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.popular__head-left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 18px;
+}
+
+.popular__heading {
+  color: #171100;
+  font-family: Sen;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.26; /* 126.316% */
+  letter-spacing: -0.76px;
+}
+
+.popular__desc {
+  color: #5f5b53;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+  width: 458px;
+}
+
+.popular__controls {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  justify-content: center;
+}
+
+.popular__control {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  border: 1px solid #ffb900;
+  color: #ffb900;
+  background: #fff;
+}
+
+.popular__control:hover {
+  background: #ffb900;
+  color: #fff;
+}
+
+.popular__list {
+  margin-top: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.popular__item {
+  width: 370px;
+  border-radius: 12px;
+  border: 1px solid #e2dfda;
+  background: #fff;
+}
+
+.popular__item:hover {
+  box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+  border: 1px solid transparent;
+}
+
+.popular__img {
+  width: 370px;
+  height: 278px;
+  border-radius: 12px 12px 0px 0px;
+  background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+  object-fit: cover;
+}
+
+.popular__item-content {
+  padding: 16px 24px 24px;
+}
+
+.popular__heading-stars {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.popular__heading3 {
+  color: #171100;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.67; /* 166.667% */
+  padding-right: 5px;
+}
+
+.popular__stars {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+.popular__desc-bottom {
+  margin-top: 6px;
+  color: #5f5b53;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.86; /* 185.714% */
+}
+
+.popular__cta {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.popular__price {
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67; /* 166.667% */
+}
+
+.popular__btn {
+  border: none;
+  font-size: 1.4rem;
+}
+
+.popular__btn:hover {
+  background: #FFB900;
+}
+
