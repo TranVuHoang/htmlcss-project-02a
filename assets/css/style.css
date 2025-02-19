@@ -463,6 +463,88 @@ a {
 }
 
 .popular__btn:hover {
-  background: #FFB900;
+  background: #ffb900;
 }
 
+/*----------------------------------
+# feedback section
+---------------------------------- */
+.feedback {
+  margin-top: 100px;
+  background: #2e2100;
+}
+
+.feedback__img {
+  width: 72px;
+  height: 72px;
+  border-radius: 72px;
+  object-fit: cover;
+}
+
+.feedback__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 96px 0;
+  gap: 241px;
+}
+
+.feedback__heading {
+  margin-top: 18px;
+  color: #f7f7f7;
+  font-family: Sen;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px; /* 141.667% */
+}
+
+.feedback__desc {
+  margin-top: 4px;
+  width: 159px;
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.86; /* 185.714% */
+}
+
+.feedback__dots {
+  margin-top: 28px;
+  display: flex;
+  gap: 6px;
+}
+
+.feedback__dot {
+  width: 6px;
+  height: 6px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  background: #634700;
+}
+
+.feedback__dot:hover,
+.feedback__active {
+  background: #ffb900;
+  cursor: pointer;
+}
+
+.feedback__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feedback__icon {
+  width: 30px;
+  height: 28px;
+  flex-shrink: 0;
+}
+
+.feedback__content-desc {
+  min-width: 740px;
+  margin-top: 28px;
+  color: #fff;
+  font-size: 2.6rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.54; /* 153.846% */
+  --line-clamp: 4;
+}
